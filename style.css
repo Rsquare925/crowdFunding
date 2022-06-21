@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(/images/image-hero-mobile.jpg);
+    background-image: url(images/image-hero-mobile.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -25,7 +25,7 @@ hr {
 
 .mobile-nav {
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     /* padding: 2rem; */
     /* width: 92%; */
     background-color: white;
