@@ -1,0 +1,88 @@
+* {
+    font-family: 'Commissioner', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/images/image-hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    width: 100%;
+    color: hsla(0, 0%, 99%, .2);
+}
+
+.primary-nav {
+    width: 92%;
+    margin: 9% auto;
+}
+
+.mobile-nav {
+    flex-direction: column;
+    position: fixed;
+    /* padding: 2rem; */
+    /* width: 92%; */
+    background-color: white;
+    margin: 2rem auto;
+    border-radius: .5rem;
+    transform: scale(0);
+}
+
+#hidden {
+    object-fit: contain;
+    width: 100%;
+    visibility: hidden;
+}
+
+.mobile-nav.active {
+    width: 90%;
+    transform: scale(1);
+    z-index: 10;
+}
+
+.mobile-nav a {
+    margin: 1rem;
+    font-weight: 500;
+    font-size: 1.36rem;
+    color: black;
+}
+
+.open-menu {
+    display: none;
+}
+
+.close-menu {
+    display: none;
+}
+
+.open-menu.active,
+.close-menu.active {
+    display: inline;
+    cursor: pointer;
+}
+
+#overlay {
+    pointer-events: none;
+}
+
+#overlay.active {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: .5;
+    pointer-events: all;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
