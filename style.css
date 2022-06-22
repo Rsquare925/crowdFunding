@@ -51,23 +51,26 @@ hr {
 nav.primary-nav {
     /* position: relative; */
     /* border: 1px solid black; */
-    background-color: black;
+    /* background-color: black; */
 }
 
-header::after {
-    /* position: absolute; */
-    /* z-index: -1; */
+
+/* header {
+    margin-bottom: 55vw;
+} */
+
+.logo::after {
+    display: block;
     content: "";
-    /* top: 0; */
     background: url(images/image-hero-mobile.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    display: block;
-    height: 19rem;
-    width: 100%;
-    /* width: 100%; */
-    /* background-repeat: no-repeat; */
-    /* background-size: 100%; */
+    min-height: 50vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    left: 0%
 }
 
 .open-menu {
