@@ -1,12 +1,12 @@
-* {
+*,
+*::after,
+*::before {
     font-family: 'Commissioner', sans-serif;
     box-sizing: border-box;
 }
 
 body {
-    background-image: url(images/image-hero-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    margin: 0;
 }
 
 a {
@@ -20,7 +20,7 @@ hr {
 
 .primary-nav {
     width: 92%;
-    margin: 9% auto;
+    margin: 0 auto;
 }
 
 .mobile-nav {
@@ -34,12 +34,6 @@ hr {
     transform: scale(0);
 }
 
-#hidden {
-    object-fit: contain;
-    width: 100%;
-    visibility: hidden;
-}
-
 .mobile-nav.active {
     width: 90%;
     transform: scale(1);
@@ -51,6 +45,28 @@ hr {
     font-weight: 500;
     font-size: 1.36rem;
     color: black;
+}
+
+nav.primary-nav {
+    /* position: relative; */
+    /* border: 1px solid black; */
+    background-color: black;
+}
+
+header::after {
+    /* position: absolute; */
+    /* z-index: -1; */
+    content: "";
+    /* top: 0; */
+    background: url(images/image-hero-mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    height: 19rem;
+    width: 100%;
+    /* width: 100%; */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100%; */
 }
 
 .open-menu {
