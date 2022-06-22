@@ -21,6 +21,7 @@ hr {
 .primary-nav {
     width: 92%;
     margin: 0 auto;
+    margin-top: 2rem;
 }
 
 .mobile-nav {
